@@ -1,12 +1,13 @@
-## Modulation Effect Template Project 
+# lpf: Low-Pass Filter as custom modfx for NTS-1
 
-This project can be used as a basis for custom modulation effects. **Refer to [parent platform](../) for build instructions.**
+__lpf__ is a custom modulation effect for the [Korg NTS-1](https://www.korg.com/us/products/dj/nts_1/)
+(and other synths compatible with [logue-sdk](https://github.com/korginc/logue-sdk)) implementing a _2nd
+order low-pass filter with controllable resonance_.
 
-### FAQ
+## Download
 
-#### Why does MODFX_PROCESS() have *main* and *sub* inputs and outputs?
+Link to the latest binary release of [lpf.ntkdigunit](https://github.com/bvontob/lpf/releases/latest/download/lpf.ntkdigunit).
 
-The modulation effect API was originally designed for the prologue synthesizer which allows each *main* and *sub* timbre audio to be processed independently by the modulation effect section.
-This interface was maintained in order to preserve API compatibility between the minilogue xd and prologue. 
-For an effect to properly work on the prologue, both inputs should be processed in the same way and the result written to the corresponding output.
+## License
 
+This project is licensed under the BSD 3-Clause License - see the LICENSE file for details.
